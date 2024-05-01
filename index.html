@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo"> <i class="fa fa-cutlery"></i>Pizzeria</a>
+    
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">Best Selling</a>
+            <a href="#footer">about</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <span class="cart-count">0</span> 
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+    
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search something...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Images/Bismark-Pizza.jpg" alt="">
+                <div class="content">
+                    <h3>Bismark Pizza</h3>
+                    <span class="price">250 Pesos/-</span>
+                    <span class="quantity">qty: 1/-</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Images/Buffalo-Style-Pizza.jpg" alt="">
+                <div class="content">
+                    <h3>Buffalo Style Pizza</h3>
+                    <span class="price">250 Pesos/-</span>
+                    <span class="quantity">qty: 1/-</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="Images/Cuban-Style-Pizza.jpg" alt="">
+                <div class="content">
+                    <h3>Cuban Style Pizza</h3>
+                    <span class="price">250 Pesos/-</span>
+                    <span class="quantity">qty: 1/-</span>
+                </div>
+            </div>
+            <div class="total">total : 750 Pesos/-</div>
+            <a href="#" class="btn" id="check-out">check out</a>
+        </div>
+    
+        <form action="" class="login-form" id="login-form">
+            <h3>Order Now</h3>
+            <input type="text" placeholder="Enter your name" class="box" id="name-input">
+            <input type="email" placeholder="Enter your email" class="box" id="email-input">
+            <input type="text" placeholder="Enter your location" class="box" id="location-input">
+            <input type="number" placeholder="Age" class="box" id="age-input">
+            <select class="dropdown" id="payment-method">
+              <option value="" disabled selected>Mode of Payment</option>
+              <option value="cash-on-delivery">Cash on delivery</option>
+              <option value="gcash">Gcash</option>
+            </select>
+            <input type="submit" value="Place Order" class="btn">
+          </form>
+          
+          <div id="submitted-data" style="display: none;">
+            <h3>Submitted Data</h3>
+            <p>Name: <span id="submitted-name"></span></p>
+            <p>Email: <span id="submitted-email"></span></p>
+            <p>Location: <span id="submitted-location"></span></p>
+            <p>Age: <span id="submitted-age"></span></p>
+            <p>Payment Method: <span id="submitted-payment-method"></span></p>
+            <button id="done-button">Done</button>
+          </div>
+    </header>
+    
+
+<section class="home" id="home">
+
+    <div class="content">
+        <h3>Quality and <span>Delicious </span>Pizza you can find</h3>
+        <p>Craving a slice of cheesy heaven? Indulge in the mouthwatering flavors and tantalizing aroma of our artisanal pizzas at Pizzaria
+            , where every bite is a slice of perfection.</p>
+        <a href="#features" class="btn">Order now!!</a>
+    </div>
+
+</section>
+
+<section class="features" id="features">
+
+    <h1 class="heading">our <span>features</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Images/Italian--.jpg" alt="">
+            <h3>Italian Pizzas</h3>
+            <p>Craving a slice of cheesy heaven? Indulge in the mouthwatering flavors and tantalizing aroma</p>
+            <a href="#italian" class="btn">GO</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/cheesy--.jpg" alt="">
+            <h3>Cheesy Pizzas</h3>
+            <p>Craving a slice of cheesy heaven? Indulge in the mouthwatering flavors and tantalizing aroma</p>
+            <a href="#cheesy" class="btn">GO</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/Vegie--.jpg" alt="">
+            <h3>Veggie Pizzas</h3>
+            <p>Craving a slice of cheesy heaven? Indulge in the mouthwatering flavors and tantalizing aroma</p>
+            <a href="#vegie" class="btn">GO</a>
+        </div>
+ </div>
+
+</section>
+
+<section class="products" id="products">
+
+    <h1 class="heading">Best <span>Selling</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Images/Hawaiian-Pizza.jpg" alt="">
+            <h3>Hawaiian Pizza</h3>
+            <p>
+                Hawaiian pizza: a delicious harmony of savory ham, cheese, and sweet pineapple, 
+                offering a taste of tropical bliss in every slice.</p>
+            <div class="price"> ₱250 -- 350/-</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/Greek-Style-Pizza.jpg" alt="">
+            <h3>Greek Style Pizza</h3>
+            <p>Greek style pizza: a Mediterranean medley of tangy feta cheese, briny olives, 
+                fresh tomatoes, and aromatic herbs atop a crisp crust.</p>
+            <div class="price"> ₱250 -- 400/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/Cuban-Style-Pizza.jpg" alt="">
+            <h3>Cuban Style Pizzas</h3>
+            <p>
+                Cuban style pizza: a savory fusion of succulent roast pork, tangy mustard, Swiss cheese,
+                 pickles, and ham on a crispy crust.</p>
+            <div class="price"> ₱250 -- 500/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+ </div>
+
+</section>
+
+<section class="italian" id="italian">
+
+    <h1 class="heading">Italian <span>Pizzas</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Images/Pinsa-italian.png" alt="">
+            <h3>Pinsa Italian Pizza</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua</p>
+            <div class="price"> ₱250 -- 350/-</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/Diavola-italian.png" alt="">
+            <h3>Diavola Italian Pizza</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price"> ₱250 -- 400/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/Quattr_Stagioni-italian.png" alt="">
+            <h3>Quatro Stagioni Pizza</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price"> ₱250 -- 500/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+ </div>
+
+</section>
+
+<section class="cheesy" id="cheesy">
+
+    <h1 class="heading">Cheesy <span>Pizzas</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Images/cheese_garlic-cheesy.jpg" alt="">
+            <h3>Cheesy Garlic Pizza</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price"> ₱250 -- 350/-</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/Cheesy_pan-cheesy.jpg" alt="">
+            <h3>Cheesy Pan Pizza</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price"> ₱250 -- 400/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/cheesy-cheesy.jpg" alt="">
+            <h3>Basta Cheesy Pizza</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price"> ₱250 -- 500/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+ </div>
+
+</section>
+
+
+
+<section class="vegie" id="vegie">
+
+    <h1 class="heading">Vegie <span>Pizzas</span></h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="Images/crust-vegie.jpg" alt="">
+            <h3>Crispy Crust Pizza</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price"> ₱250 -- 350/-</div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/deluxe-vegie.jpg" alt="">
+            <h3>Deluxe Vegie Pizza</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price"> ₱250 -- 400/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+
+        <div class="box">
+            <img src="Images/vegie-vegie.jpg" alt="">
+            <h3>Pesto Overload Pizza</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="price"> ₱250 -- 500/- </div>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+
+            <a class="btn-add">Add to Cart</a>
+        </div>
+ </div>
+
+</section>
+
+<section class="footer" id="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>Pizzeria <i class="fa fa-cutlery"></i></h3>
+            <p>Lorem ipsum dolor sit amet,
+                 consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt 
+                  ut labore et dolore magna aliqua.</p>
+                  <div class="share">
+                    <a href="https://www.facebook.com/jaymarc.merilo.1" class="fab fa-facebook"></a>
+                    <a href="https://www.instagram.com/unsched.jm/" class="fa-brands fa-instagram"></a>
+                    <a href="https://github.com/Peppermint22" class="fa-brands fa-github"></a>
+                 </div>
+        </div>
+
+        <div class="box">
+            <h3>Contact Info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +63-903-6327-832</a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +63-123-4567-890</a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> jaymarccmerilo@gmail.com</a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Bulacan, Philippines</a>
+        </div>
+
+        <div class="box">
+            <h3>Explore</h3>
+            <a href="#home" class="links"> <i class="fas fa-arrow-right"></i> home</a>
+            <a href="#features" class="links"> <i class="fas fa-arrow-right"></i> features</a>
+            <a href="#products" class="links"> <i class="fas fa-arrow-right"></i> Best selling</a>
+        </div>
+
+        <div class="box">
+            <h3>About</h3>
+            <p>Lorem ipsum dolor sit amet,
+                 consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt 
+                  ut labore et dolore magna aliqua.</p>
+        </div>
+
+
+
+    </div> 
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
